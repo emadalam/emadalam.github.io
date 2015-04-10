@@ -95,21 +95,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+body {
+    background: url('../img/nitegreen2.jpg');
+    color: #fff;
+}
+.banner {
+    position: absolute;
+}
+.banner-sm {
+    font-size: 0.5em;
+}
 
 /* ==========================================================================
    Helper classes
