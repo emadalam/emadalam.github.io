@@ -23,6 +23,6 @@ $(function() {
 		});
 	}
 
-	setPosition();
-	$win.resize(setPosition);
+	// setPosition();
+	// $win.resize(setPosition);
 });
