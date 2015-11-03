@@ -25,17 +25,14 @@ title: eMAD.in
 highlighter: pygments
 timezone: "Asia/Kolkata"
 
-# exclude:
-# - bin
-# - config.rb
-# - Gemfile
-# - Gemfile.lock
-# - gems
-# - Procfile
-# - Rakefile
-# - README.md
-# - script
-# - vendor
+exclude:
+- bin
+- config.rb
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENSE.txt
+- CNAME
 
 sass:
   style: compressed
