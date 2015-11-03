@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+        {% capture page_title %}{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+        <title>{{ page_title }}</title>
+
+        <!-- Meta Info -->
+        {% if site.meta %}
+            {% for meta in site.meta %}
+                <meta name="{{ meta[0] }}" content="{{ meta[1] }}">
+            {% endfor %}
+        {% endif %}
+        
+        <!-- FB App ID -->
+        {% if site.fb_app_id %}
+            <meta property="fb:app_id" content="{{ site.fb_app_id }}">
+        {% endif %}
+        
+        <!-- Open Graph properties -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="{{ site.title }}">
+        <meta property="og:title" content="{{ page_title }}">
+        <meta property="og:image" content="/assets/img/bg-new-small.jpg">
+        {% if site.meta && site.meta.description %}<meta name="og:description" content="{{ site.meta.description }}">{% endif %}
+
+        <!-- Twitter Cards -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="emadalam">
+        <meta name="twitter:creator" content="emadalam">
+
+        <link rel="stylesheet" href="/assets/css/app.css">
+        <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="container">
+            {{ content }}
+        </div>
+        
+        {% include scripts.html %}
+        {% include analytics.html %}
+    </body>
+</html>

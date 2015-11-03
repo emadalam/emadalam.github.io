@@ -1,0 +1,44 @@
+google_analytics_id: UA-44640221-1
+fb_app_id: 522920774465173
+
+# sitewise defaults
+defaults:
+  -
+    scope:
+        path: ""
+    values:
+        layout: site
+
+meta:
+  author: Emad Alam
+  description: "Emad Alam is a web developer and a JavaScript guru based out of Bangalore, India specializing in front-end development with expertize in social media integration. In depth experience in Cross Browser, Cross Device Rich Internet Application development using XHTML, HTML5, CSS, CSS3, Advance JavaScript and OOJS, AJAX, jQuery, ExtJS, BackboneJS, RequireJS and related web technologies with a back-end knowledge of Java, JSP, ASP.NET with MVC, Adobe Experience Manager, PHP, DBMS with MySQL and MS-SQL servers."
+
+
+# For Atom Feed
+domain: emad.in"
+author: Emad Alam
+email: emad.alam@yahoo.com
+title: eMAD.in
+
+# standard jekyll configuration
+
+highlighter: pygments
+timezone: "Asia/Kolkata"
+
+# exclude:
+# - bin
+# - config.rb
+# - Gemfile
+# - Gemfile.lock
+# - gems
+# - Procfile
+# - Rakefile
+# - README.md
+# - script
+# - vendor
+
+sass:
+  style: compressed
+
+github:
+  username: emadalam
