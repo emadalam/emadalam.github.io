@@ -15,7 +15,7 @@ meta:
 
 
 # For Atom Feed
-domain: emad.in"
+domain: emad.in
 author: Emad Alam
 email: emad.alam@yahoo.com
 title: eMAD.in
@@ -23,7 +23,7 @@ title: eMAD.in
 # standard jekyll configuration
 
 highlighter: pygments
-timezone: "Asia/Kolkata"
+timezone: Asia/Kolkata
 
 exclude:
 - bin
