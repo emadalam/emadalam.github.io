@@ -1,0 +1,12 @@
+@mixin box-sizing($boxmodel) {
+	-webkit-box-sizing: $boxmodel;
+	-moz-box-sizing: $boxmodel;
+	box-sizing: $boxmodel;
+}
+
+@mixin transition($prop: all) {
+	-webkit-transition: $prop .4s ease-in-out;
+    -moz-transition: $prop .4s ease-in-out;
+    -o-transition: $prop .4s ease-in-out;
+    transition: $prop .4s ease-in-out;
+}

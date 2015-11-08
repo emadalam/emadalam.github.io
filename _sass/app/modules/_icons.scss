@@ -1,0 +1,61 @@
+$linkedin-color: #007bb6;
+$email-color: #222222;
+$facebook-color: #3b5998;
+$twitter-color: #00aced;
+
+.icons {
+	text-align: center;
+}
+.icon {
+	display: inline-block;
+	margin: 0 4px;
+	font-size: 32px;
+	width: 48px;
+	font-weight: bold;
+	text-decoration: none;
+	opacity: .8;
+	
+	&:hover {
+		opacity: 1;
+	}
+
+	&-linkedin {
+		color: $linkedin-color;
+
+		&:hover,
+		&:visited,
+		&:active {
+			color: $linkedin-color;
+		}
+	}
+
+	&-email {
+		color: $email-color;
+
+		&:hover,
+		&:visited,
+		&:active {
+			color: $email-color;
+		}
+	}
+
+	&-facebook {
+		color: $facebook-color;
+
+		&:hover,
+		&:visited,
+		&:active {
+			color: $facebook-color;
+		}
+	}
+
+	&-twitter {
+		color: $twitter-color;
+
+		&:hover,
+		&:visited,
+		&:active {
+			color: $twitter-color;
+		}
+	}
+}

@@ -1,0 +1,72 @@
+.intro {
+	
+	&__avatar {
+		position: relative;
+		border: 4px solid #fff;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		max-width: 120px;
+		max-height: 120px;
+		display: block;
+		margin: 0 auto;
+		z-index: 1;
+
+		@media screen and (max-width: $screen_md_max) {
+			border-width: 3px;
+			max-width: 70px;
+			max-height: 70px;
+		}
+	}
+
+	&__nav-item {
+		position: relative;
+		display: inline-block;
+		height: 120px;
+
+		@media screen and (max-width: $screen_md_max) {
+			height: 70px;
+		}
+
+		&_center {
+			float: none;
+			width: 25%;
+			text-align: center;
+			
+			@media screen and (max-width: $screen_md_max) {
+				width: (100%/3);
+			}
+		}
+		&_left {
+			float: left;
+			width: 37.5%;
+			text-align: right;
+
+			@media screen and (max-width: $screen_md_max) {
+				width: (100%/3);
+			}
+		}
+		&_right {
+			float: right;
+			width: 37.5%;
+			text-align: left;
+
+			@media screen and (max-width: $screen_md_max) {
+				width: (100%/3);
+			}
+		}
+		
+		&__line {
+			width: 100%;
+			border: 1px solid #fff;
+			position: absolute;
+			top: 50%;
+			left: 0;
+		}
+
+		&__link {
+			text-decoration: none;
+			padding: 4px;
+			display: inline-block;
+		}
+	}
+}
