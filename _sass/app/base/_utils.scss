@@ -1,3 +1,15 @@
+.text {
+	&-left {
+		text-align: left;
+	}
+	&-right {
+		text-align: right;
+	}
+	&-center {
+		text-align: center;
+	}
+}
+
 .vcontent {
 	&__wrapper {
 		display: table;
@@ -14,4 +26,10 @@
 		display: table-cell;
 		vertical-align: middle;
 	}
+}
+
+.cursive {
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
+	letter-spacing: 2px;
 }

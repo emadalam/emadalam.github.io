@@ -1,28 +1,90 @@
 $(function() {
-	var
-		$win = $(window),
-		$banner = $('.banner'),
-		width, height;
+	var $smileys = $('.smiley'),
+		$drawers = $('.drawer'),
+		$drawerOpeners = $('[data-drawer]'),
+		$tabOpeners = $('[data-tab]'),
+		$sliderBgs = $('[data-slider-bg]');
 
-	function setPosition() {
-		width = ($win.width() / 2) - ($banner.width() / 2);
-		height = ($win.height() / 2) - ($banner.height() / 2);
+	function convertSmiley(el) {
+		el.html(emojione.toImage(el.text()))
+	}
 
-		if (width <= 0 || height <= 0) {
-			$banner.addClass('banner-sm');
-		} else {
-			$banner.removeClass('banner-sm');
-		}
+	function openDrawer(e) {
+		var $o = $(this),
+			selector = $o.attr('data-drawer');
 
-		width = width > 0 ? width : 0;
-		height = height > 0 ? height : 0;
+		$drawers.removeClass('active');
+		$(selector).addClass('active');
 
-		$banner.css({
-			top: height,
-			left: width
+		e && e.preventDefault();
+	}
+
+	function openTab(e) {
+		var $t = $(this),
+			$tp = $t.parents('li'),
+			selector = $t.attr('data-tab'),
+			$tab = $(selector);
+
+		// tab
+		$tab
+			.siblings('.tab')
+			.removeClass('active');
+		$tab
+			.addClass('active')
+			.parents('.drawer__content__inner')
+			.animate({
+				scrollTop: 0
+			}, 500);
+
+		// link highlight
+		$tp
+			.siblings()
+			.removeClass('active');
+		$tp
+			.addClass('active');
+
+		e && e.preventDefault();
+	}
+
+	function drawerInit() {
+		$drawers
+			.detach()
+			.appendTo('body')
+			.find('.drawer__close')
+			.on('click', function(e) {
+				$(this)
+					.parents('.drawer')
+					.removeClass('active');
+
+				e.preventDefault();
+			});
+
+		$drawerOpeners.each(function() {
+			$(this).on('click', openDrawer);
 		});
 	}
 
-	// setPosition();
-	// $win.resize(setPosition);
+	function tabInit() {
+		$tabOpeners.each(function() {
+			$(this).on('click', openTab);
+		});
+	}
+
+	function bgSliderInit() {
+
+	}
+	
+	// convert all smileys paralelly
+	$smileys.each(function() {
+		var $s = $(this);
+		setTimeout(function() {
+			convertSmiley($s);
+		}, 10)
+	});
+
+	// init all the drawers
+	drawerInit();
+
+	// init all tabs
+	tabInit();
 });
