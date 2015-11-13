@@ -1,5 +1,6 @@
 $(function() {
-	var $smileys = $('.smiley'),
+	var $hnb = $('html, body'),
+		$smileys = $('.smiley'),
 		$drawers = $('.drawer'),
 		$drawerOpeners = $('[data-drawer]'),
 		$tabOpeners = $('[data-tab]'),
@@ -15,6 +16,8 @@ $(function() {
 
 		$drawers.removeClass('active');
 		$(selector).addClass('active');
+
+		$hnb.addClass('no-scroll');
 
 		e && e.preventDefault();
 	}
@@ -56,6 +59,8 @@ $(function() {
 					.parents('.drawer')
 					.removeClass('active');
 
+				$hnb.removeClass('no-scroll');
+				
 				e.preventDefault();
 			});
 

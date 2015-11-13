@@ -5,12 +5,12 @@
 	opacity: 0;
 	z-index: -1;
 	background: #fff;
-	z-index: 999;
 	@include transition();
 
 	&.active {
 		opacity: .9;
 		margin: 0;
+		z-index: 999;
 	}
 	&_full {
 		left: 0;

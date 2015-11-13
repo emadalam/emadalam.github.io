@@ -5,6 +5,7 @@
 		opacity: 0;
 		z-index: -1;
 		position: absolute;
+		margin-bottom: 80px;
 		@include transition();
 
 		&.active {
