@@ -1,3 +1,5 @@
+$glow-color: #fff;
+
 .text {
 	&-left {
 		text-align: left;
@@ -34,10 +36,20 @@
 
 .cursive {
 	font-family: 'Indie Flower', cursive;
-	font-size: 18px;
-	letter-spacing: 2px;
+	font-size: 24px;
+	letter-spacing: 3px;
 }
 
 .no-scroll {
 	overflow: hidden !important;
+}
+
+.glow {
+	text-shadow: 0 0 3px $glow-color;
+
+	&:hover,
+	&:visited,
+	&:active {
+		text-shadow: 0 0 3px $glow-color;
+	}
 }

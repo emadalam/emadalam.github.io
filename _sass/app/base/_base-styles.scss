@@ -15,7 +15,7 @@ a {
 	@include transition();
 	&:hover,
 	&:active {
-		color: darken($link-color, 30%);
+		color: darken($link-color, 10%);
 		text-decoration: none;
 	}
 
