@@ -2,6 +2,7 @@ $linkedin-color: #007bb6;
 $email-color: #222222;
 $facebook-color: #3b5998;
 $twitter-color: #00aced;
+$github-color: #24292e;
 
 .icons {
 	text-align: center;
@@ -56,6 +57,16 @@ $twitter-color: #00aced;
 		&:visited,
 		&:active {
 			color: $twitter-color;
+		}
+	}
+
+	&-github {
+		color: $github-color;
+
+		&:hover,
+		&:visited,
+		&:active {
+			color: $github-color;
 		}
 	}
 }

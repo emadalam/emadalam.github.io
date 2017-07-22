@@ -1,5 +1,8 @@
+# generic site meta
 google_analytics_id: UA-44640221-1
 fb_app_id: 522920774465173
+url: https://emad.in
+enforce_ssl: emad.in
 
 # sitewise defaults
 defaults:
@@ -8,10 +11,9 @@ defaults:
         path: ""
     values:
         layout: site
-
 meta:
   author: Emad Alam
-  description: "Emad Alam is a web developer and a JavaScript guru based out of Bangalore, India specializing in front-end development with expertize in social media integration. In depth experience in Cross Browser, Cross Device Rich Internet Application development using XHTML, HTML5, CSS, CSS3, Advance JavaScript and OOJS, AJAX, jQuery, ExtJS, BackboneJS, RequireJS and related web technologies with a back-end knowledge of Java, JSP, ASP.NET with MVC, Adobe Experience Manager, PHP, DBMS with MySQL and MS-SQL servers."
+  description: "Emad Alam is JavaScript Ninja and a seasoned web developer based out of Berlin, Germany specializing in front-end development. Creator of atvjs library (https://github.com/emadalam/atvjs) for AppleTV app development using JavaScript. In depth experience in cross-browser, cross-device, Rich Internet Application development using Advance JavaScript and related web technologies with a back-end knowledge of Java, JSP, ASP.NET with MVC, Adobe Experience Manager, PHP, nodejs, DBMS with MySQL and MS-SQL servers."
 
 
 # For Atom Feed
@@ -21,10 +23,8 @@ email: emad.alam@yahoo.com
 title: eMAD.in
 
 # standard jekyll configuration
-
 highlighter: pygments
-timezone: Asia/Kolkata
-
+timezone: Europe/Berlin
 exclude:
 - bin
 - config.rb
@@ -33,9 +33,6 @@ exclude:
 - README.md
 - LICENSE.txt
 - CNAME
-
 sass:
   style: compressed
-
-github:
-  username: emadalam
+github: [metadata]
