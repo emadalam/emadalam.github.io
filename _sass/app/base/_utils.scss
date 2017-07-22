@@ -17,6 +17,10 @@
 		height: 100%;
 		width: 100%;
 	}
+
+	&__withbackground {
+		background-image: url(/assets/img/bg-new-small.jpg);
+	}
 	
 	&__inner {
 		display: table-row;
