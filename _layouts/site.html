@@ -1,11 +1,26 @@
+---
+layout: compress
+---
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% if site.social_profiles %}
+            <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Person",
+              "name": "{{ site.author }}",
+              "url": "{{ site.url }}",
+              "sameAs": {{ site.social_profiles | jsonify }}
+            }
+            </script>
+        {% endif %}
         
-        <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+        <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         
@@ -38,6 +53,8 @@
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="emadalam">
         <meta name="twitter:creator" content="emadalam">
+        <meta name="twitter:title" content="{{ page_title }}">
+        {% if site.meta and site.meta.description %}<meta name="twitter:description" content="{{ site.meta.description }}">{% endif %}
 
         <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
