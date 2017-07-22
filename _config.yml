@@ -23,7 +23,7 @@ email: emad.alam@yahoo.com
 title: eMAD.in
 
 # standard jekyll configuration
-highlighter: pygments
+highlighter: rouge
 timezone: Europe/Berlin
 exclude:
 - bin
