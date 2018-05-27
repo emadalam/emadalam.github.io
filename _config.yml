@@ -5,7 +5,7 @@ url: https://emad.in
 enforce_ssl: emad.in
 domain: emad.in
 author: Emad Alam
-email: emad.alam@yahoo.com
+email: alam@emad.in
 title: eMAD.in
 social_profiles:
   - https://facebook.com/connect2emad
@@ -13,7 +13,7 @@ social_profiles:
   - https://www.linkedin.com/in/emadalam/
   - https://github.com/emadalam
   - https://www.instagram.com/im.emad/
-
+blog_link: https://medium.com/@emadalam
 
 # sitewise defaults
 defaults:

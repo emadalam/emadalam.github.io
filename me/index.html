@@ -1,4 +1,6 @@
 ---
 title: About Me
 ---
-{% include intro.html message="I'm working on writing an awesome bio for myself, will soon update this space." %}
+{% capture me %}{% include me.html %}{% endcapture %}
+
+{% include intro.html message=me %}
