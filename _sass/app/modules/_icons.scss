@@ -3,6 +3,9 @@ $email-color: #222222;
 $facebook-color: #3b5998;
 $twitter-color: #00aced;
 $github-color: #24292e;
+$instagram-color: #833AB4;
+$instagram-color-shade-1: #C13584;
+$instagram-color-shade-2: #E1306C;
 
 .icons {
 	text-align: center;
@@ -15,6 +18,11 @@ $github-color: #24292e;
 	font-weight: bold;
 	text-decoration: none;
 	opacity: .8;
+
+	@media screen and (max-width: $screen_md_max) {
+		font-size: 28px;
+		width: 36px;
+	}
 	
 	&:hover {
 		opacity: 1;
@@ -67,6 +75,22 @@ $github-color: #24292e;
 		&:visited,
 		&:active {
 			color: darken($github-color, 10%);
+		}
+	}
+
+	&-instagram {
+		color: $instagram-color;
+
+		&:hover,
+		&:visited,
+		&:active {
+			color: darken($instagram-color, 10%);
+		}
+		> .shade-1 {
+			color: $instagram-color-shade-1;
+		}
+		> .shade-2 {
+			color: $instagram-color-shade-2;
 		}
 	}
 }

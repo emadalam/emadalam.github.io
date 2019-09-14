@@ -13,7 +13,7 @@ social_profiles:
   - https://www.linkedin.com/in/emadalam/
   - https://github.com/emadalam
   - https://www.instagram.com/im.emad/
-blog_link: https://medium.com/@emadalam
+blog_link: https://blog.emad.in
 
 # sitewise defaults
 defaults:
@@ -24,7 +24,7 @@ defaults:
         layout: site
 meta:
   author: Emad Alam
-  description: "Emad Alam is JavaScript Ninja and a seasoned web developer based out of Berlin, Germany specializing in front-end development. Creator of atvjs library (https://github.com/emadalam/atvjs) for AppleTV app development using JavaScript. In depth experience in cross-browser, cross-device, Rich Internet Application development using Advance JavaScript and related web technologies with a back-end knowledge of Java, JSP, ASP.NET with MVC, Adobe Experience Manager, PHP, nodejs, DBMS with MySQL and MS-SQL servers."
+  description: "Emad Alam is seasoned developer and a Software Architect based out of Berlin, Germany, specializing in product development. Creator of atvjs library (https://github.com/emadalam/atvjs) for AppleTV app development using JavaScript. With an in depth knowledge of the end-to-end systems, Emad Alam has helped companies build scalable systems and applications for their web, mobile and tv interface. Emad Alam is a JavaScript fanatic who loves everything open source and is always on top of the cutting edge technologies."
 
 
 # standard jekyll configuration

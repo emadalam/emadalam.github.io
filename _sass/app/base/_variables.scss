@@ -2,7 +2,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // Colors
-$bg-color: #EEEEEE;
+$bg-color: #f4f8fd;
 
 //
 // Media Queries Breakpoints
@@ -10,16 +10,16 @@ $bg-color: #EEEEEE;
 
 // Phone
 $screen_xs_min: 480px;
-$screen_xs_max: ($screen_xs_min - 1px);
+$screen_xs_max: $screen_xs_min - 1px;
 
 // Tablet
 $screen_sm_min: 768px;
-$screen_sm_max: ($screen_sm_min - 1px);
+$screen_sm_max: $screen_sm_min - 1px;
 
 // Small desktop
 $screen_md_min: 992px;
-$screen_md_max: ($screen_md_min - 1px);
+$screen_md_max: $screen_md_min - 1px;
 
 // Large desktop
 $screen_lg_min: 1200px;
-$screen_lg_max: ($screen_lg_min - 1px);
+$screen_lg_max: $screen_lg_min - 1px;
