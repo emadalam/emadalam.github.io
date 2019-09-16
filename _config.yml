@@ -24,7 +24,7 @@ defaults:
         layout: site
 meta:
   author: Emad Alam
-  description: "Emad Alam is seasoned developer and a Software Architect based out of Berlin, Germany, specializing in product development. Creator of atvjs library (https://github.com/emadalam/atvjs) for AppleTV app development using JavaScript. With an in depth knowledge of the end-to-end systems, Emad Alam has helped companies build scalable systems and applications for their web, mobile and tv interface. Emad Alam is a JavaScript fanatic who loves everything open source and is always on top of the cutting edge technologies."
+  description: "Emad Alam is a Seasoned Developer, a Software Architect and a JavaScript fanatic based out of Berlin, Germany, specializing in product development. Creator of atvjs library (https://github.com/emadalam/atvjs) for AppleTV app development using JavaScript. With an in depth knowledge of the end-to-end systems, Emad Alam has helped companies build scalable systems and applications for their web, mobile and tv interface."
 
 
 # standard jekyll configuration
