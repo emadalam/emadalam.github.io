@@ -20,6 +20,10 @@ $glow-color: #fff;
     &-sub {
         vertical-align: sub;
     }
+
+    &-light {
+        color: $secondary-color;
+    }
 }
 
 .vcontent {
@@ -45,9 +49,8 @@ $glow-color: #fff;
 }
 
 .cursive {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    letter-spacing: 3px;
 }
 
 .no-scroll {

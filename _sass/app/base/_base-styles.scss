@@ -28,7 +28,13 @@ a {
     &:hover,
     &:active {
         color: darken($link-color, 10%);
-        text-decoration: none;
+        text-decoration: underline;
+    }
+    &.icon {
+        &:hover,
+        &:active {
+            text-decoration: none;
+        }
     }
 }
 
@@ -41,4 +47,31 @@ blockquote {
     margin: 0 0 20px;
     font-size: 18px;
     border-left: 5px solid #eee;
+    color: $secondary-color;
+
+    @media screen and (max-width: $screen_md_max) {
+        padding: 8px 16px;
+        margin: 0 0 16px;
+        font-size: 16px;
+    }
+}
+
+ul {
+    @media screen and (max-width: $screen_md_max) {
+        list-style: none;
+    }
+}
+
+li {
+    display: list-item;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @media screen and (max-width: $screen_md_max) {
+        margin-bottom: 0.75rem;
+    }
+}
+
+hr {
+    border-top: 1px solid $light-grey;
 }

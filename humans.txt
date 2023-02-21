@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Emad Alam -- JavaScript Ninja -- @emadalam
+    Emad Alam -- Programming Ninja -- @emadalam
 
 # THANKS
 

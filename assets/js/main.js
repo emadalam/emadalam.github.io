@@ -18,8 +18,6 @@ $(function() {
 		$(selector).addClass('active');
 
 		$hnb.addClass('no-scroll');
-
-		e && e.preventDefault();
 	}
 
 	function openTab(e) {
@@ -67,6 +65,13 @@ $(function() {
 		$drawerOpeners.each(function() {
 			$(this).on('click', openDrawer);
 		});
+
+		// auto-open drawer on page load
+		var locationHash = window.location.hash
+		var drawer = $('[data-drawer="'+locationHash+'"]')
+		if (locationHash && drawer.length) {
+			openDrawer.apply(drawer[0])
+		}
 	}
 
 	function tabInit() {
@@ -79,7 +84,7 @@ $(function() {
 
 	}
 	
-	// convert all smileys paralelly
+	// convert all smileys in parallel
 	$smileys.each(function() {
 		var $s = $(this);
 		setTimeout(function() {
